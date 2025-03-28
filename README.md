@@ -30,7 +30,7 @@ _insert into **NomeTable** values(**valoresEmOrdem**)_
   insert into Pessoa values(00000000000, "Nome Sobrenome", "00/00/0000", "sexo", "O-")
 ```
 ## CHAVE ESTRANGEIRA
-_FOREING KEY (**atributo**) REFERENCES **table**(**atributo**)_
+_FOREIGN KEY (**atributo**) REFERENCES **table**(**atributo**)_
 ```sql
   create table Pessoa(
   CPF        int PRIMARY KEY,
@@ -41,6 +41,6 @@ _FOREING KEY (**atributo**) REFERENCES **table**(**atributo**)_
   create table compra(
   ID_Compra  int PRIMARY KEY,
   CPF        int,
-  FOREING KEY (CPF) REFERENCES Pessoa(CPF)
+  FOREIGN KEY (CPF) REFERENCES Pessoa(CPF)
   );
 ```
