@@ -45,7 +45,7 @@ _FOREIGN KEY (**atributo**) REFERENCES **table**(**atributo**)_
   );
 ```
 ### SELECIONAR ENTIDADE
-_SELECT **atributo1**, **atributo2**... from **NomeTable**_
+_SELECT **atributo1**, **atributo2**... from **NomeTable** where **condição**_
 ```sql
   select Nome, Idade from Cliente where Idade > 18
 ```
