@@ -44,3 +44,8 @@ _FOREIGN KEY (**atributo**) REFERENCES **table**(**atributo**)_
   FOREIGN KEY (CPF) REFERENCES Pessoa(CPF)
   );
 ```
+### SELECIONAR ENTIDADE
+_SELECT **atributo1**, **atributo2**... from **NomeTable**_
+```sql
+  select Nome, Idade from Cliente where Idade > 18
+```
