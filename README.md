@@ -74,3 +74,41 @@ Indica um caracter que pode ser qualquer coisa
   select pais from pessoa where pais like "Bra_il"
 ```
 **Todas essas condições podem ser combinadas**
+
+### UPDATE
+Usado para manutenção
+```sql
+  update nome_table set modificação where ;
+```
+
+### DELETE
+Usado para deletar cúpulas
+```sql
+  delete from nome_table where atributo = condição;
+```
+
+### ALTER TABLE
+**add**: Adiciona uma coluna na tabela
+```sql
+  alter table nome_table add nome_atributo tipo;
+```
+
+**drop column**: Deleta uma coluna da tabela
+```sql
+  alter table nome_table drop column nome_coluna;
+```
+
+**rename column**: Renomeia uma coluna da table
+```sql
+  alter table nome_table rename column nome_antigo to nome_novo;
+```
+
+**alter column**: Altera o tipo de valor de uma coluna
+```sql
+  alter table nome_table alter column nome_coluna novo_tipo;
+```
+
+**add primary**: Adiciona uma chave primária se não houver alguma
+```sql
+  alter table nome_table add PRIMARY KEY (nome_coluna);
+```
